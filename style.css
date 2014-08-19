@@ -1,2 +1,30 @@
 /* Styles go here */
 
+h1{
+  font-family: 'Libre Baskerville', serif;
+  color: #007A5C;
+}
+h2{
+  color: #E68A00;
+}
+body{
+  font-family: 'Asap', serif;
+  background-color:#EBFFEB;
+  color: #006262;
+}
+a:hover, a:visited:hover{
+  color: #007A7A;
+}
+a:visited{
+  color:#80C7B5;
+}
+a{
+  color: #80C7B5;
+  text-decoration: none;
+}
+.backLink, .backLink:visited{
+  color: #E68A00;
+}
+.userDetails{
+  width: 100%;
+}

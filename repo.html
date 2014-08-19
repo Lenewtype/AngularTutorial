@@ -1,0 +1,12 @@
+<p>Number of Open Issues: {{details.open_issues_count}}</p>
+<div>
+  <ul ng-repeat="collab in collabs">
+    <li>
+      <img src="http://www.gravatar.com/avatar/{{collab.gravatar_id}}"/> {{collab.login}}
+    </li>
+  </ul>
+</div>
+<div class="backLinks">
+  <a class="backLink" href="#/main.html">Back to Search</a> | 
+  <a class="backLink" href="#/user/{{username}}">Back to Repositories</a>
+</div>

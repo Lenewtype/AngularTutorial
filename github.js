@@ -16,9 +16,25 @@
       
     };
     
+    var getRepositoryDetails = function(user, repo){
+      return $http.get('https://api.github.com/repos/'+user+'/'+repo)
+        .then(function(response){
+          return response.data;
+        });
+    };
+    
+    var getCollaborators = function(user, repo){
+      return $http.get('https://api.github.com/repos/'+user+'/'+repo+'/collaborators')
+        .then(function(response){
+          return response.data;
+        });
+    };
+    
     return {
       getUser: getUser,
-      getRepos: getRepos
+      getRepos: getRepos,
+      getRepositoryDetails: getRepositoryDetails,
+      getCollaborators: getCollaborators
     };
   };
   var module = angular.module('githubViewer');
